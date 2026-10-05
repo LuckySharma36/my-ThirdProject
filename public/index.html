@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Employee Management System</h1>
+    <nav id="navbar">
+    <a href="#addEmployee">Add Employee</a>
+    <a href="#getEmployees">Get All Employee</a>
+    <a href="#getspecificEmployee">Get Specific Employee</a>
+    <a href="#deleteall">Delete All Employee</a>
+    <a href="#deletespecificEmployee">Delete Specific Employee</a>
+    <a href="#change">Change details </a>
+    </nav>
+
+    <hr>
+
+    <section id="addEmployee">
+        <input type="number" id="empID" placeholder="Give Employee id">
+        <input type="text" id="empName" placeholder="Give Employee Name">
+        <input type="number" id="empSalary" placeholder="Give Employee Salary">
+        <input type="text" id="empPosition" placeholder="Give Employee Position">
+        <button type="button" id="addempbutton">Add Employee</button>
+        <p id="Addpara"></p>
+    </section>
+
+    <section id="getEmployees">
+        <button id="databutton" type="button">get all</button>
+        <p id="detailsAll"></p>
+    </section>
+
+    <section id="getspecificEmployee">
+        <input type="number" id="NewId" placeholder="Give Employee ID">
+        <button id="submit2" type="button">get Employee</button>
+        <p id="detailpara"></p>
+    </section>
+
+    <section id="deleteall">
+        <button id="deleteAll" type="button">delete All</button>
+        <p id="deleteDetails"></p>
+    </section>
+    <section id="deletespecificEmployee">
+        <input type="number" id="deleteone" placeholder="Give Student ID">
+        <button id="deletespecific" type="button">Delete Student</button>
+        <p id="deletespecificdetail"></p>
+    </section>
+
+    <section id="change">
+        <input type="number" id="empIDnew" placeholder="Give Employee id">
+        <input type="text" id="empNamenew" placeholder="Give Employee Name">
+        <input type="number" id="empSalarynew" placeholder="Give Employee Salary">
+        <input type="text" id="empPositionnew" placeholder="Give Employee Position">
+        <button type="button" id="changeEmpbutton">Change Employee</button>
+        <p id="updatevalue"></p>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
